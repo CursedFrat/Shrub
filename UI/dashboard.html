@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>UI</title>
+	<link rel="stylesheet" href="dashboard.css" />
+</head>
+<body>
+	<div class="app">
+		<div class="menu-toggle">
+			<div class="hamburger">
+				<span></span>
+			</div>
+		</div>
+
+		<aside class="sidebar">
+			<h3>Menu</h3>
+			
+			<nav class="menu">
+				<a href="dashboard.html" class="menu-item">Dashboard</a>
+				<a href="terminal.html" class="menu-item">Terminal</a>
+				<a href="issues.html" class="menu-item">Issues</a>
+				<a href="settings.html" class="menu-item">Settings</a>
+				<a href= "logout" class="logout">Log out</a>
+			</nav>
+
+		</aside>
+
+	
+
+	<script>
+		const menu_toggle = document.querySelector('.menu-toggle');
+		const sidebar = document.querySelector('.sidebar');
+
+		menu_toggle.addEventListener('click', () => {
+			menu_toggle.classList.toggle('is-active');
+			sidebar.classList.toggle('is-active');
+		});
+	</script>
+
+<div class="content">
+	<div class= "content"> Server Name</div>
+	<div class= "content"> IP Address</div>
+	<div class= "content"> OS</div>
+	<div class= "content"> OS Version</div>
+	<div class= "content"> Host Name</div>
+	<div class= "content"> Managed State</div>
+	<div class= "content"> Manufacturer</div>
+	<div class= "content"> Last Active</div>
+</div>
+
+</body>
+</html>
