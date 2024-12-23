@@ -2,10 +2,12 @@
 nav.menu {
     border-radius: 50px;
     background: linear-gradient(145deg, #a4b1ff, #8a95e6);
-    box-shadow:  28px 28px 57px #484e78,
-                 -28px -28px 57px #eafcff;
-    padding: 20px 20px;      /* Add padding around the navigation items */
-    text-align: center;      /* Center the items horizontally */
+    box-shadow: 28px 28px 57px #484e78, -28px -28px 57px #eafcff;
+    padding: 20px;          /* Add padding around the navigation items */
+    display: flex;          /* Use flexbox for alignment */
+    justify-content: center; /* Center items horizontally */
+    flex-wrap: wrap;        /* Allow wrapping on smaller screens */
+    gap: 15px;              /* Add spacing between links */
 }
 
 /* Style the 'menu-item' anchor links inside the navigation */
@@ -14,13 +16,42 @@ nav.menu .menu-item {
     font-size: 24px;         /* Make the font size bigger */
     font-weight: bold;       /* Make the text bold */
     text-decoration: none;   /* Remove underline from the links */
-    padding: 10px 20px;      /* Add padding to the link for spacing */
-    display: inline-block;   /* Make the anchor behave like a block element (so padding works) */
+    padding: 10px 20px;      /* Add padding for spacing */
+    border-radius: 10px;     /* Rounded corners for links */
+    transition: color 0.3s ease, background-color 0.3s ease; /* Smooth hover effects */
 }
 
-/* Optional: Change the link color when hovered */
+/* Optional: Change the link color and background when hovered */
 nav.menu .menu-item:hover {
-    color: #7b2496;          /* Change color on hover (example: tomato red) */
-    text-decoration: underline; /* Optionally add an underline on hover */
+    color: #7b2496;            /* Change color on hover */
+    background-color: rgba(255, 255, 255, 0.2); /* Add a subtle hover background */
+    text-decoration: none;    /* Prevent underline if added globally */
 }
 
+/* Responsive image styling */
+img {
+    max-width: 100%;         /* Ensure the image scales to fit its container */
+    height: auto;            /* Maintain aspect ratio */
+    margin-top: 20px;
+    border-radius: 10px;     /* Add rounded corners */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); /* Add a shadow for depth */
+}
+
+/* Responsive Design: Adjust layout for smaller screens */
+@media (max-width: 768px) {
+    nav.menu {
+        flex-direction: column; /* Stack links vertically */
+        align-items: center;    /* Center-align links */
+        gap: 10px;              /* Reduce spacing between items */
+    }
+
+    nav.menu .menu-item {
+        font-size: 20px;        /* Slightly reduce font size on small screens */
+        padding: 8px 15px;      /* Adjust padding for smaller links */
+    }
+
+    img {
+        margin-top: 10px;
+        width: 90%;             /* Reduce width for better fit on smaller devices */
+    }
+}

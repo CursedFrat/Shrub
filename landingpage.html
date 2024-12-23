@@ -1,33 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>UI</title>
-	<link rel="stylesheet" href="about.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WIDOWMAKER.AI</title>
     <style>
+        /* Reset and base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
         body {
-            border-radius: 50px;
-background: linear-gradient(145deg, #a4b1ff, #8a95e6);
-box-shadow:  28px 28px 57px #484e78,
-             -28px -28px 57px #eafcff;
-       }
-       
-           </style>
+            font-family: Arial, sans-serif;
+            background: linear-gradient(145deg, #a4b1ff, #8a95e6);
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            min-height: 100vh;
+        }
+
+        /* Navigation menu */
+        nav {
+            width: 100%;
+            max-width: 1200px;
+            display: flex;
+            justify-content: space-between;
+            background-color: #333;
+            padding: 10px 20px;
+            border-radius: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            margin: 0 10px;
+        }
+
+        nav a:hover {
+            color: #a4b1ff;
+        }
+
+        /* Responsive image */
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        /* Responsive layout for smaller screens */
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav a {
+                margin: 10px 0;
+            }
+        }
+    </style>
 </head>
 <body>
+    <nav>
+        <a href="landingpage.html">WIDOWMAKER.WORLD</a>
+        <a href="loginpage.html">LOGIN</a>
+    </nav>
 
-   
-
-<nav class= "menu">
-<a href="landingpage.html" class="menu-item">WIDOWMAKER.WORLD</a>
-<a href="loginpage.html" class="menu-item">LOGIN</a>
-
-</nav>
-    </body>
-
-    <img src="C:\Users\student\Downloads\widowmaker_transparency_1_by_covano_dae9gtc-fullview.png"style="float: right; margin-left: 5px;"> 
-    
-
+    <img src="c:\Users\student\Downloads\widowmaker_transparency_1_by_covano_dae9gtc-fullview.png" alt="Widowmaker Image">
+</body>
+</html>
