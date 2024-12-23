@@ -1,0 +1,26 @@
+/* Style the nav element with the 'menu' class */
+nav.menu {
+    border-radius: 50px;
+    background: linear-gradient(145deg, #a4b1ff, #8a95e6);
+    box-shadow:  28px 28px 57px #484e78,
+                 -28px -28px 57px #eafcff;
+    padding: 20px 20px;      /* Add padding around the navigation items */
+    text-align: center;      /* Center the items horizontally */
+}
+
+/* Style the 'menu-item' anchor links inside the navigation */
+nav.menu .menu-item {
+    color: white;            /* Set the text color to white */
+    font-size: 24px;         /* Make the font size bigger */
+    font-weight: bold;       /* Make the text bold */
+    text-decoration: none;   /* Remove underline from the links */
+    padding: 10px 20px;      /* Add padding to the link for spacing */
+    display: inline-block;   /* Make the anchor behave like a block element (so padding works) */
+}
+
+/* Optional: Change the link color when hovered */
+nav.menu .menu-item:hover {
+    color: #7b2496;          /* Change color on hover (example: tomato red) */
+    text-decoration: underline; /* Optionally add an underline on hover */
+}
+
